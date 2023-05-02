@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>D:\data\IDEA_Project\Duplicate_check\res\allResult.txt</file> <!-- 日志文件路径 -->
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern> <!-- 日志格式 -->
+        </encoder>
+    </appender>
+
+    <logger name="com.fh" level="DEBUG"> <!-- 日志记录器名称和级别 -->
+        <appender-ref ref="FILE"/> <!-- 输出目的地 -->
+    </logger>
+</configuration>
